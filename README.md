@@ -64,11 +64,11 @@ A secure, full-featured survey platform built for **Federal University of Techno
 | **Surveys** | Create, edit, delete; active / draft / closed states; optional expiry |
 | **Questions** | Multiple choice (MCQ), free text, rating (1–10) |
 | **Responses** | Anonymous or identified; AJAX submission (no page reload) |
-| **Analytics** | Pie charts (MCQ), rating distributions, text samples — per question |
+| **Analytics** | Pie charts (MCQ), rating distributions, text samples per question |
 | **Dashboard** | 7-day response trend, status breakdown, recent survey list |
 | **Export** | UTF-8 BOM CSV (Excel-compatible) per survey |
 | **Security** | PDO prepared statements, CSRF tokens, XSS escaping, input sanitization |
-| **Isolation** | All data is owner-scoped — users only see their own surveys |
+| **Isolation** | All data is owner-scoped users only see their own surveys |
 
 ---
 
@@ -186,13 +186,13 @@ futminna-survey/
 
 ## Security
 
-- **PDO prepared statements** — no string interpolation in any query
-- **CSRF tokens** — validated on every POST, including AJAX requests via `X-Csrf-Token` header
-- **bcrypt** — `password_hash()` with `PASSWORD_BCRYPT` at cost 12
-- **XSS prevention** — all output wrapped in `htmlspecialchars()` via a shared `h()` helper
-- **`.htaccess`** — blocks direct access to `includes/`, `config/`, and `.sql` files
-- **Session hardening** — `httponly`, `samesite=Strict`, `session_regenerate_id()` on login
-- **DB transactions** — response submissions are atomic; partial writes roll back automatically
+- **PDO prepared statements:** no string interpolation in any query
+- **CSRF tokens:** validated on every POST, including AJAX requests via `X-Csrf-Token` header
+- **bcrypt:** `password_hash()` with `PASSWORD_BCRYPT` at cost 12
+- **XSS prevention:** all output wrapped in `htmlspecialchars()` via a shared `h()` helper
+- **`.htaccess`:** blocks direct access to `includes/`, `config/`, and `.sql` files
+- **Session hardening:** `httponly`, `samesite=Strict`, `session_regenerate_id()` on login
+- **DB transactions:** response submissions are atomic; partial writes roll back automatically
 
 > Set `DEBUG_MODE = false` in `config/config.php` before deploying to production.
 
