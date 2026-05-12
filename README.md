@@ -216,3 +216,9 @@ Pull requests are welcome. For significant changes, open an issue first to discu
 
 **Federal University of Technology, Minna (FUTMINNA)**  
 Survey Management System v1.0
+
+---
+
+## Contact
+
+If you want to discuss this project or review the code privately, feel free to reach out at: mail.devtjames@gmail.com
