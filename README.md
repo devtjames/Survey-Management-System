@@ -1,4 +1,4 @@
-# FUTMINNA Survey Management System
+# Survey Management System
 
 A secure, full-featured survey platform built for **Federal University of Technology, Minna**. Supports survey creation, response collection, real-time analytics, and CSV export all in pure procedural PHP with no frameworks.
 
